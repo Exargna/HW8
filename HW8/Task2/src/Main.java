@@ -8,12 +8,12 @@ public class Main {
             weight[i] = new Random().nextDouble(40, 100);
             sum += weight[i];
 
-            if (weight[i] <= 80.9 && weight[i] >= 60) {
-                System.out.println("Люди с весом в диапозоне 80 - 60 кг: " + weight[i]);
+            if (weight[i] <= 80 && weight[i] >= 60) {
+                System.out.println("Люди с весом в диапазоне от 80 до 60 кг: " + weight[i]);
             }
 
         }
-        System.out.println("\n\nСредний вес всех людей: " + sum / 10);
+        System.out.println("\n\nСредний вес всех людей: " + sum / weight.length);
 
     }
 }
